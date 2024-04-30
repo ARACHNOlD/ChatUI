@@ -1,4 +1,5 @@
 import 'package:e_learning/chat/chat.dart';
+import 'package:e_learning/my_courses/courses.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Chat(),
+      home: CircularProgressBar(
+        percentage: 80,
+      ),
     );
   }
 }
